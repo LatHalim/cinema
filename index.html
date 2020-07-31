@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
     <title>Кинотеатр</title>
 </head>
 <body>
@@ -81,59 +82,55 @@
 </div>  
 <!--Конец второй страницы-->
 <!--Третья страница-->
-<form action="order.php">
-               <style> th, td {
-                border: 1px solid black;
-                padding: 5px 10px; }
-            </style>
-            <table> 
-            <thead><h5 id="p1">Выберите фильм</h5> 
-                <tr>
-                      <th>check</th>
-                      <th>Начало сеанса</th>
-                      <th>Название фильма</th>
-                      <th>Жанр</th>
-                    
-                </tr>
-            </thead>
-               
+<section>
+<div class="container"> 
+    <div class="movie-list">
+        <h2 class="movie-list__header">Выберите фильм</h2> 
+        <table class="movie-list__table"> 
+<thead>
+    <tr>
+        <th>Time</th>
+        <th>Stuff that will happen</th>
+        <th>Заказать фильм</th>
+  </tr>
+</thead>
 
-            <tr> 
-                <th><label for="Выбрать1">Выбор</label>
-                    <input type="checkbox" name="Выбрать" id="Выбрать1"></th>
-                <th>10:00</th>
-                <th><a href="https://www.kinopoisk.ru/film/838/#" target="_blank">  Человек-паук</a></th>
-                <th>фантастика, боевик, приключения</th>
 
-            </tr>
-                  
-            <tr>
-                <th><label for="Выбрать2">Выбор</label>
-                    <input type="checkbox" name="Выбрать" id="Выбрать2"></th>
-                <th>12:00</th>
-                <th><a href="https://www.kinopoisk.ru/film/1122114/#" target="_blank">Собачья жизнь 2</a> </th>
-                <th>фэнтези, драма, комедия</th>
-            </tr>
+<tbody>
+    <tr> 
+        <th>10am - 12pm</th>
+        <th>Introduction and presentations about Envato</th>
+        <th>кнопка</th>    
+  </tr>
+  
+  <tr>
+      <th>12pm - 02pm</th>
+      <th>Sessions by honorable guests and Speaker</th>
+      <th>кнопка</th>
+  </tr>
 
-            <tr>
-                <th><label for="Выбрать3">Выбор</label>
-                    <input type="checkbox" name="Выбрать" id="Выбрать3"></th>
-                <th>14:00</th>
-                <th><a href="https://www.kinopoisk.ru/film/846824/#" target="_blank">История игрушек 4</a> </th>
-                <th>мультфильм, фэнтези, комедия</th>
 
-            </tr>
+</tbody>
 
-            <tr>
-                <th><label for="Выбрать4">Выбор</label>
-                    <input type="checkbox" name="Выбрать" id="Выбрать4"></th>
-                <th>16:00</th>
-                <th><a href="https://www.kinopoisk.ru/film/693730/#"target="_blank" >Люди в черном: Интернэшнл</a> </th>
-                <th>фантастика, боевик, комедия</th>
-            </tr>
-            </table>
-                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!</q>
-            </form>
+<tfoot>
+    <tr>
+        <th>02pm - 03pm</th>
+        <th>Break and Mingle time with the authors</th>
+        <th>кнопка</th>
+    </tr>
+
+    <tr>
+    <th>03pm - 05pm</th>
+        <th>Portfolio Review, Rewards and Ending Presentation</th>
+        <th>кнопка</th>
+     </tr> 
+
+</tfoot>
+</table>  
+    </div>                 
+</div>
+</section>
+<q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!</q>  
 <!--Конец третьей страницы-->
 <!--Четвертая страница--> 
     <div> 

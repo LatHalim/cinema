@@ -1,0 +1,38 @@
+body{
+    font-family: 'Roboto', sans-serif;}
+
+@font-face{
+    font: 'Roboto';
+    scr: url('../fonts/Roboto-Regular.ttf') format("truetype");
+    font-weight: 400;}
+
+
+@font-face{
+    font: 'Roboto';
+    scr: url('../fonts/Roboto-Bold.ttf') format("truetype");
+    font-weight: 700;
+}
+.container{
+        max-width: 1030px;
+        margin: 0 auto;
+        }
+    
+.movie-list__header{
+        color: #252525;
+        font-size: 50px;
+        text-align: center;
+        font-weight: 700;
+        margin: 90px;
+    }
+.movie-list__table{
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+.movie-list__table th {
+        color: #ffffff;
+        background: #a3cc40;
+        font-size: 30px;
+        font-weight: 700;
+}
