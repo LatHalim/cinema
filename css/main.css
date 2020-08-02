@@ -12,10 +12,16 @@ body{
     scr: url('../fonts/Roboto-Bold.ttf') format("truetype");
     font-weight: 700;
 }
+@font-face{
+    font: 'Roboto';
+    scr: url('../fonts/Roboto-Black.ttf') format("truetype");
+    font-weight: 700;
+}
+
 .container{
         max-width: 1030px;
         margin: 0 auto;
-        }
+    }
     
 .movie-list__header{
         color: #252525;
@@ -29,10 +35,75 @@ body{
         border-collapse: collapse;
         border-radius: 15px;
         overflow: hidden;
+        margin-top: 87px;
     }
-.movie-list__table th {
+
+.movie-list__1 {
         color: #ffffff;
         background: #a3cc40;
         font-size: 30px;
         font-weight: 700;
+        height: 75px;
+    }
+.movie-list__2 {
+    color: #ffffff;
+    background: #373737;
+    font-size: 22px;
+    font-weight: 700;
+    height: 75px;
 }
+
+.movie-list__3 {
+        color: #ffffff;
+        background: #4b4d4f;
+        font-size: 22px;
+        font-weight: 700;
+        height: 75px;
+    }
+
+    .movie-list_th0 {
+        color: #ffffff;
+        background: #a3cc40;
+        font-size: 30px;
+        font-weight: 700;
+        height: 75px;
+        padding-left: 65px;
+        text-align: left;
+    }
+
+    .movie-list_th1 {
+        color: #ffffff;
+        background: #373737;
+        font-size: 22px;
+        font-weight: 700;
+        height: 75px;
+        padding-left: 65px;
+        text-align: left;
+    }
+    .movie-list_th2 {
+        color: #ffffff;
+        background: #4b4d4f;
+        font-size: 22px;
+        font-weight: 700;
+        height: 75px;
+        padding-left: 65px;
+        text-align: left;
+    }
+
+    .movie-list_th3_1 {
+        color: #ffffff;
+        background: #373737;
+        font-size: 22px;
+        font-weight: 700;
+        height: 75px;
+        padding-right: 35px;;
+    }
+
+    .movie-list_th3_2 {
+        color: #ffffff;
+        background: #4b4d4f;
+        font-size: 22px;
+        font-weight: 700;
+        height: 75px;
+        padding-right: 35px;
+    }
