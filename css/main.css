@@ -1,109 +1,158 @@
-body{
-    font-family: 'Roboto', sans-serif;}
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
-@font-face{
+@font-face {
     font: 'Roboto';
     scr: url('../fonts/Roboto-Regular.ttf') format("truetype");
-    font-weight: 400;}
+    font-weight: 400;
+}
 
 
-@font-face{
+@font-face {
     font: 'Roboto';
     scr: url('../fonts/Roboto-Bold.ttf') format("truetype");
     font-weight: 700;
 }
-@font-face{
+
+@font-face {
     font: 'Roboto';
     scr: url('../fonts/Roboto-Black.ttf') format("truetype");
-    font-weight: 700;
+    font-weight: 900;
 }
 
-.container{
-        max-width: 1030px;
-        margin: 0 auto;
-    }
-    
-.movie-list__header{
-        color: #252525;
-        font-size: 50px;
-        text-align: center;
-        font-weight: 700;
-        margin: 90px;
-    }
-.movie-list__table{
-        width: 100%;
-        border-collapse: collapse;
-        border-radius: 15px;
-        overflow: hidden;
-        margin-top: 87px;
-    }
+.container {
+    max-width: 1030px;
+    margin: 0 auto;
+}
 
-.movie-list__1 {
-        color: #ffffff;
-        background: #a3cc40;
-        font-size: 30px;
-        font-weight: 700;
-        height: 75px;
-    }
-.movie-list__2 {
-    color: #ffffff;
-    background: #373737;
-    font-size: 22px;
+.movie-list-header {
+    color: #252525;
+    font-size: 50px;
+    text-align: center;
     font-weight: 700;
+    margin: 90px;
+}
+
+.movie-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 87px;
+}
+
+.movie-list-1 {
+    color: #ffffff;
+    background: #a3cc40;
+    font-size: 30px;
+    font-weight: 400;
     height: 75px;
 }
 
-.movie-list__3 {
-        color: #ffffff;
-        background: #4b4d4f;
-        font-size: 22px;
-        font-weight: 700;
-        height: 75px;
-    }
+.movie-list-2 {
+    color: #ffffff;
+    background: #373737;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+}
 
-    .movie-list_th0 {
-        color: #ffffff;
-        background: #a3cc40;
-        font-size: 30px;
-        font-weight: 700;
-        height: 75px;
-        padding-left: 65px;
-        text-align: left;
-    }
+.movie-list-3 {
+    color: #ffffff;
+    background: #4b4d4f;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+}
 
-    .movie-list_th1 {
-        color: #ffffff;
-        background: #373737;
-        font-size: 22px;
-        font-weight: 700;
-        height: 75px;
-        padding-left: 65px;
-        text-align: left;
-    }
-    .movie-list_th2 {
-        color: #ffffff;
-        background: #4b4d4f;
-        font-size: 22px;
-        font-weight: 700;
-        height: 75px;
-        padding-left: 65px;
-        text-align: left;
-    }
+.movie-list-th0 {
+    color: #ffffff;
+    background: #a3cc40;
+    font-size: 30px;
+    font-weight: 900;
+    height: 75px;
+    padding-left: 65px;
+    text-align: left;
+}
 
-    .movie-list_th3_1 {
-        color: #ffffff;
-        background: #373737;
-        font-size: 22px;
-        font-weight: 700;
-        height: 75px;
-        padding-right: 35px;;
-    }
+.movie-list-th1 {
+    color: #ffffff;
+    background: #373737;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+    padding-left: 65px;
+    text-align: left;
+}
 
-    .movie-list_th3_2 {
-        color: #ffffff;
-        background: #4b4d4f;
-        font-size: 22px;
-        font-weight: 700;
-        height: 75px;
-        padding-right: 35px;
-    }
+.movie-list-th2 {
+    color: #ffffff;
+    background: #4b4d4f;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+    padding-left: 65px;
+    text-align: left;
+}
+
+.movie-list-th3-1 {
+    color: #ffffff;
+    background: #373737;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+    padding-right: 35px;
+}
+
+.movie-list-th3-2 {
+    color: #ffffff;
+    background: #4b4d4f;
+    font-size: 22px;
+    font-weight: 400;
+    height: 75px;
+    padding-right: 35px;
+}
+
+th {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#ticket {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+.block {
+    padding: 20px;
+    position: relative;
+    color: #fff;
+}
+
+.block::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+    border: 10px solid transparent;
+    border-bottom: 20px solid white;
+}
+
+#block-1 {
+    padding left: 20px;
+    position: relative;
+    color: #fff;
+}
+
+#block-1::after {
+    content: '';
+    position: absolute;
+    right: 430px;
+    bottom: 15px;
+    border: 10px solid transparent;
+    border-top: 20px solid white;
+}
