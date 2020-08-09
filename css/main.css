@@ -21,6 +21,10 @@ body {
     font-weight: 900;
 }
 
+A:link {
+    text-decoration: none;
+}
+
 .container {
     max-width: 1030px;
     margin: 0 auto;
@@ -124,34 +128,30 @@ th {
     color: #ffffff;
     font-size: 30px;
     font-weight: 900;
-
 }
 
-.block {
+.th0-1 {
     padding: 20px;
     position: relative;
     color: #fff;
 }
 
-.block::after {
+.th0-1::after {
     content: '';
     position: absolute;
-    right: 20px;
-    bottom: 25px;
     border: 10px solid transparent;
     border-bottom: 20px solid white;
 }
 
-#block-1 {
-    padding left: 20px;
+.th0-2 {
+    padding-right: 20px;
     position: relative;
     color: #fff;
 }
 
-#block-1::after {
+.th0-2::after {
     content: '';
     position: absolute;
-    right: 430px;
     bottom: 15px;
     border: 10px solid transparent;
     border-top: 20px solid white;
