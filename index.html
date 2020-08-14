@@ -10,67 +10,72 @@
 </head>
 
 <body>
-    <header>
-        <!--Первая страница-->
-        <div>
-            <div style="float: left; margin-right: 20px; background-color: black;">
-                <a href="http://university.innopolis.ru" target="_blank"> <img src="img/logo.png" alt="Логотип"></a>
+    <!--Первая страница-->
+    <div class="block01">
+        <div class="container">
+            <header class="block01__header">
+                <div class="block01__logo">
+                    <img src="img/logo.png" alt="Логотип">
+                </div>
 
-            </div>
-            <div>
-                <span style="color:green">
-                    <ul>
-                        <li><a href="#ticket">ЗАКАЗАТЬ БИЛЕТ</a></li>
-                        <li><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
-                        <li><a href="#cinema">ФИЛЬМЫ</a></li>
-                        <li><a href="#contact">КОНТАКТЫ</a></li>
-                    </ul>
-                </span>
-            </div>
-            <div>Ваш город: <u>Москва</u></div>
+                <div class="block01__menu">
+                    <nav class="block01__nav">
+                        <ul>
+                            <li><a href="#ticket">Event Details</a></li>
+                            <li><a href="#advantages">Speakers</a></li>
+                            <li><a href="#cinema">Sponsors</a></li>
+                            <li><a href="#contact">Past Events</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
         </div>
-        <div>
-            <img src="img/top_bg.jpg" alt="Кинозал" width="1400" height="500">
+        </header>
+        <div class="block01__main">
+            <h1 class="block__h1 text-center">Закажите билет в кино</h1>
+            <h2 class="block__h2 text-center">Всем покупателям подарок!</h2>
         </div>
-        <h1>Закажите билет в кино</h1>
-        <h2>Всем покупателям подарок!</h2>
-    </header>
+    </div>
+
+
     <!--Конец первой страницы-->
     <!--Вторая страница-->
-    <div>
-        <div>
-            <h3>Добро пожаловать!</h3>
+    <div class="block02">
+        <div class="block02__welcom">
+            <h3 class="block02__text1">Добро пожаловать!</h3>
+            <p class="block02__text2">
+                Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis
+                quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</p>
+            <p class="block02__text2">
+                Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis
+                quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</p>
         </div>
-        <div>
-            <h3> Почему мы? </h3>
-            <p id="advantages">
-                <i>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis
-                    quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus.</i></p>
-            <p>
-                <i>Cumque dolorem eum harum laudantium libero molestias saepe soluta? Facere minima optio perferendis
-                    quibusdam quis reprehenderit, saepe! Debitis enim optio saepe voluptatibus. </i></p>
-
+        <div class="block02__header">
+            <h3 id="advantages"> Почему мы? </h3>
         </div>
 
-        <div>
-            <div>
-                <h4>Большие экраны</h4>
-                <p> <img src="img/b2_icon_1.jpg" alt="Большие экраны" <i>Lorem ipsum dolor sit amet, consectetur
+        <div class="block02__advantages">
+            <div class="block02__plus">
+                <h4 class="block02__plus_header">Большие экраны</h4>
+                <p class="block02__plus img3"> <img src="img/b2_icon_1.jpg" alt="Большие экраны" </p>
+                <p class="block02__plus text3">Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia
-                    nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</img>
-                </p>
+                    nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</p>
             </div>
-            <div>
-                <h4>Объемный звук</h4>
-                <p><img src="img/b2_icon_2.jpg" alt="Объемный звук" </p>
-                <p><i>Lorem ipsum dolor sit amet.</i></p>
+            <div class="block02__plus">
+                <h4 class="block02__plus_header">Объемный звук</h4>
+                <p class="block02__plus img3"><img src="img/b2_icon_2.jpg" alt="Объемный звук" </p>
+                <p class="block02__plus text3">In this meetup you will get to know the marketplaces better, because
+                    that’s why were all here for
+                    right? Learn a few tips and tricks from experienced authors from all over the country.</p>
             </div>
-            <div>
-                <h4>Удобные кресла</h4>
-                <p>
-                    <img src="img/b2_icon_3.jpg" alt="Удобные кресла" <i>Lorem ipsum dolor sit amet, consectetur
+            <div class="block02__plus">
+                <h4 class="block02__plus_header">Удобные кресла</h4>
+                <p class="block02__plus img3">
+                    <img src="img/b2_icon_3.jpg" alt="Удобные кресла" </p>
+                <p class="block02__plus text3">Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia
-                    nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</i></p>
+                    nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.</p>
             </div>
         </div>
     </div>
@@ -79,12 +84,13 @@
     <section>
         <div class="container">
             <div class="movie-list">
-                <h2 class="movie-list-header">Выберите фильм</h2>
-                <table class="movie-list-table">
+                <h2 class="movie-list__header">Выберите фильм</h2>
+                <table class="movie-list__table">
                     <thead>
-                        <tr class="movie-list-1">
-                            <th id="ticket" class="movie-list th0-1"><a href="#" style="color:white;">Время</a></th>
-                            <th class="movie-list-th0 th0-2"><a href="#" style="color:white;">Фильмы</a></th>
+                        <tr class="movie-list__tr1">
+                            <th id="ticket" class="movie-list__th0 th0_1"><a href="#" style="color:white;">Time</a></th>
+                            <th class="movie-list__th0 th0_2"><a href="#" style="color:white;">Stuff that will
+                                    happen</a></th>
                             <th>
                                 <Title>Заказать</Title>
                             </th>
@@ -92,100 +98,124 @@
                     </thead>
 
                     <tbody>
-                        <tr class="movie-list-2">
-                            <th>10.00 - 12.00</th>
-                            <th class="movie-list-th1">Человек паук</th>
-                            <th class="movie-list-th3-1"><img src="img/plus.png " alt="plus"></th>
+                        <tr class="movie-list__tr2">
+                            <th>10am - 12pm</th>
+                            <th class="movie-list__th1">Introduction and presentations about Envato</th>
+                            <th class="movie-list__th3_1"><img src="img/plus.png " alt="plus"></th>
                         </tr>
 
-                        <tr class="movie-list-3">
-                            <th>12.00 - 14.00</th>
-                            <th class="movie-list-th2">Собачья жизнь 2</th>
-                            <th class="movie-list-th3-2"><img src="img/plus.png " alt="plus"></th>
+                        <tr class="movie-list__tr3">
+                            <th>12pm - 02pm</th>
+                            <th class="movie-list__th2">Sessions by honorable guests and Speakers</th>
+                            <th class="movie-list__th3_2"><img src="img/plus.png " alt="plus"></th>
                         </tr>
-                        <tr class="movie-list-2">
-                            <th>14.00 - 15.00</th>
-                            <th class="movie-list-th1">Люди в черном: Интернэшнл</th>
-                            <th class="movie-list-th3-1"><img src="img/plus.png " alt="plus"></th>
+                        <tr class="movie-list__tr2">
+                            <th>02pm - 03pm</th>
+                            <th class="movie-list__th1">Break and Mingle time with the authors</th>
+                            <th class="movie-list__th3_1"><img src="img/plus.png " alt="plus"></th>
                         </tr>
+
+                        <tr class="movie-list__tr3">
+                            <th>03pm - 05pm</th>
+                            <th class="movie-list__th2">Portfolio Review, Rewards and Ending Presentation</th>
+                            <th class="movie-list__th3_2"><img src="img/plus.png " alt="plus"></th>
+                        </tr>
+
                     </tbody>
-
-                    <tfoot>
-
-
-                        <tr class="movie-list-3">
-                            <th>15.00 - 17.00</th>
-                            <th class="movie-list-th2">История игрушек 4</th>
-                            <th class="movie-list-th3-2"><img src="img/plus.png " alt="plus"></th>
-                        </tr>
-                    </tfoot>
                 </table>
             </div>
         </div>
     </section>
-    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus
-        veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui
+    <q class="movie-list__foot">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati
+        quam rem
+        repellendus
+        veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam,
+        qui
         quibusdam sunt!</q>
     <!--Конец третьей страницы-->
     <!--Четвертая страница-->
-    <div>
-        <div>
+    <div class="block03">
+        <div class="container">
+
+        </div>
+        <div class="block03__img priz">
             <img src=img/b4_img.jpg alt="Подарок" width="150" height="150">
         </div>
-        <div>
+        <div class="block03__img map">
             <img src="img/b4_bg.jpg" alt="Билеты" width="1200" height="500">
         </div>
         <div>
-            <b>Подарок каждому!</b>
-
-            <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate
-                excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi
-                sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam
-                aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi
+            <b class="block03__header">Подарок каждому!</b>
+            <i class="block03__text4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur,
+                cum, cupiditate
+                excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit
+                sequi
+                sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                aperiam
+                aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati
+                quasi
                 ratione reprehenderit sequi sint, tenetur unde velit veniam!
 
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate
-                excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi
+                excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit
+                sequi
                 sint, tenetur unde velit veniam!
 
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate
-                excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi
+                excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit
+                sequi
                 sint, tenetur unde velit veniam!</i>
         </div>
-        <div>
+        <div class="block03__buttom">
             <a href="http://ino.denis.wiki/#">Получить подарок</a>
         </div>
 
     </div>
     <!--Конец четвертой страницы-->
     <!-- Пятая страница -->
-    <h5>
-        <p id="cinema">Фильмы</p>
-    </h5>
-    <div>
+    <div class="block04">
+        <div class="container">
+            <h5>
+                <p id="cinema" class="block04__header">Фильмы</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!</p>
+            </h5>
+            <table class="cimena__tab">
+                <tr>
+                    <td><img src="img/mov1.jpg" alt="Человек паук" width="150" height="150"></td>
+                    <td><img src="img/mov2.jpg" alt="Собачья жизнь 2" width="150" height="150"></td>
+                    <td><img src="img/mov3.jpg" alt="Люди в черном" width="150" height="150"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/mov1.jpg" alt="Человек паук" width="150" height="150"></td>
+                    <td><img src="img/mov2.jpg" alt="Собачья жизнь 2" width="150" height="150"></td>
+                    <td><img src="img/mov3.jpg" alt="Люди в черном" width="150" height="150"></td>
+                </tr>
+                <tr>
+                    <td><img src="img/mov1.jpg" alt="Человек паук" width="150" height="150"></td>
+                    <td><img src="img/mov2.jpg" alt="Собачья жизнь 2" width="150" height="150"></td>
+                    <td><img src="img/mov3.jpg" alt="Люди в черном" width="150" height="150"></td>
+                </tr>
+        
+            </table>
+        </div>
     </div>
+    
+    <div class="block05">
+        <div class="block05__map">
+            <img src="img/1920x450.png" alt="Карта" width="1500" height="150">
+        </div>   
     </div>
-    <img src="img/mov1.jpg" alt="Человек паук" width="150" height="150">
-    <img src="img/mov2.jpg" alt="Собачья жизнь 2" width="150" height="150">
-    <img src="img/mov3.jpg" alt="Люди в черном" width="150" height="150">
-    <img src="img/mov1.jpg" alt="Человек паук" width="150" height="150">
-    <img src="img/mov2.jpg" alt="Собачья жизнь 2" width="150" height="150">
-    <img src="img/mov3.jpg" alt="Люди в черном" width="150" height="150">
-    </div>
-    <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum,
-            laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae,
-            suscipit!</i></p>
-    <div>
-        <img src="img/1920x450.png" alt="Карта" width="1500" height="150">
-    </div>
-    <div>
-        <span style="color:green;">
-            <p id="contact">
-                <a href="https://twitter.com/#" target="_blank">Twitter</a>
-                <a href="https://www.facebook.com/#" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/#" target="_blank">INSTAGRAM</a>
-            </p>
-        </span>
+
+    <div class="block06">
+        <div class="block06__contact">
+            <span>
+                <p id="contact">
+                    <a href="https://twitter.com/#" target="_blank">Twitter</a>
+                    <a href="https://www.facebook.com/#" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/#" target="_blank">INSTAGRAM</a>
+                </p>
+            </span>
+        </div>
     </div>
     <!--Шестая страница-->
     <form action="order.php">
