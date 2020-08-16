@@ -8,7 +8,7 @@ body {
 }
 
 html {
-    font-size: 20px;
+    font-size: 1.46vw;
 }
 
 /** Шрифты */
@@ -56,35 +56,61 @@ html {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.eot');
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('../fonts/Roboto-Light.eot') format('embedded-opentype'),
+        url('../fonts/Roboto-Light.woff') format('woff'),
+        url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+        url('../fonts/Roboto-Medium.eot') format('embedded-opentype'),
+        url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 
 /** Общие стили */
-.block01__header {
+/** Первая страница */
+.home__header {
     display: inline-block;
     width: 100%;
     margin-top: 2.5rem;
 }
 
-.block01__logo {
+.home__logo {
     width: 30%;
     float: left;
 }
 
-.block01__nav li {
+.home__logo img {
+    width: 9.4rem;
+}
+
+.home__nav li {
     display: inline-block;
 
 }
 
-.block01__menu {
+.home__menu {
     float: right;
-    margin-right: 1rem;;
+    margin-right: 1rem;
+    ;
 }
 
-.block01__nav li+li {
+.home__nav li+li {
     margin-left: 1.5rem;
 }
 
-.block01__nav a {
+.home__nav a {
     font-size: 0.75rem;
     color: white;
     text-transform: uppercase;
@@ -93,20 +119,35 @@ html {
     line-height: 3rem;
 }
 
-.block01__nav a:hover {
+.home__nav a:hover {
     color: #90d23d;
 }
 
-.block__h1 {
+.home__main {
+    padding: 7rem 0 5rem;
+}
+
+.home::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 6rem solid transparent;
+    border-right: 100vw solid #fff;
+    left: 0;
+    bottom: 0;
+}
+
+.home__h1 {
     font-size: 4rem;
     color: white;
     line-height: 1;
     font-weight: 100;
-    margin: 7.5rem 1rem 0.5rem;
-    margin-left: 1rem;
+    margin: 0 0 1rem;
 }
 
-.block__h2 {
+.home__h2 {
     font-size: 2.5rem;
     color: white;
     font-weight: 400;
@@ -114,6 +155,7 @@ html {
     border: honeydew;
     margin-left: 0rem;
 }
+
 .text-right {
     text-align: right;
     font-weight: 100;
@@ -124,48 +166,86 @@ html {
     text-align: center;
 }
 
-/** Сетка макета */
-.container {
-    max-width: 51.5rem;
-    margin: 0 auto;
-}
-.block01 {
-    background: url(../img/top_bg.jpg) no-repeat top center / cover;
-    min-height: 100vh;
+/** Вторая страница */
+
+.welcome__shell {
+    position: relative;
 }
 
-.block02 {
-    width: 51.5rem;
-    height: 35rem;
+.welcome__info {
+    position: absolute;
+    top: -10rem;
+    width: 50%;
+    padding: 1.5rem;
+    background: #fff;
+    right: 0;
+    box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
 }
 
-.block03 {
-    width: 51.5rem;
-    height: 40rem;
+.welcome__header {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0 0 6rem;
 }
 
-.block04 {
-    width: 51.5rem;
-    height: 60rem;
-    margin-top: 90px;
+.welcome__text1 {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0 0 1.25rem;
 }
 
-.block05 {
-    width: 68.3rem;
-    height: 11rem;
+.welcome__text2 {
+    font-size: 0.7rem;
+    font-weight: 100;
 }
 
-.block06 {
-    width: 68.3rem;
-    height: 22.5rem;
+.welcome__text3 {
+    margin: 0 0 1rem;
+    font-size: 1.75rem;
+    font-weight: 900;
 }
+
+.welcome__text4 {
+    color: rgb(36, 36, 36);
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.welcome__plus {
+    float: left;
+    width: 33.33%;
+    padding: 0 0.75rem;
+}
+
+.welcome__pluses {
+    overflow: hidden;
+    margin: 0 -0.75rem;
+}
+
+.welcome__img1 {
+    height: 11.5rem;
+    position: relative;
+}
+
+.welcome__img1 img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+/** Третья страница */
 
 .movie-list__header {
     color: #252525;
     font-size: 2.5rem;
     text-align: center;
-    font-weight: bold;
-    margin: 4.5rem;
+    font-weight: 700;
+    margin: 3.5rem;
 }
 
 .movie-list__table {
@@ -173,116 +253,316 @@ html {
     border-collapse: collapse;
     border-radius: 0.75rem;
     overflow: hidden;
-    margin-top: 4.35rem;
+    box-sizing: border-box;
 }
 
-.movie-list__tr1 {
-    color: #ffffff;
-    background: #a3cc40;
-    font-size: 1.5rem;
-    font-weight: 400;
-    height: 3.75rem;
-}
-
-.movie-list__tr2 {
-    color: #ffffff;
-    background: #373737;
-    font-size: 1.1rem;
-    font-weight: 400;
-    height: 3.75rem;
-}
-
-.movie-list__tr3 {
-    color: #ffffff;
-    background: #4b4d4f;
-    font-size: 1.1rem;
-    font-weight: 400;
-    height: 3.75rem;
-}
-
-.movie-list__th0 {
+.movie-list__table th {
     color: #ffffff;
     background: #a3cc40;
     font-size: 1.5rem;
     font-weight: 900;
     height: 3.75rem;
-    padding-left: 3.25rem;
+    padding: 1rem 2rem 0.6rem;
     text-align: left;
 }
 
-.movie-list__th1 {
+.movie-list__table th:first-child {
+    text-align: center;
+}
+
+.movie-list__table a {
     color: #ffffff;
-    background: #373737;
+}
+
+.plus {
+    width: 1.65rem;
+    height: 1.65rem;
+}
+
+.movie-list__table td {
+    color: #ffffff;
     font-size: 1.1rem;
     font-weight: 400;
-    height: 3.75rem;
-    padding-left: 3.25rem;
-    text-align: left;
-}
-
-.movie-list__th2 {
-    color: #ffffff;
     background: #4b4d4f;
-    font-size: 1.1rem;
-    font-weight: 400;
-    height: 3.75rem;
-    padding-left: 3.25rem;
-    text-align: left;
+    height: 3.17rem;
+    padding: 1rem 2rem 0.6rem;
 }
 
-.movie-list__th3_1 {
-    color: #ffffff;
+.movie-list__table td:first-child {
+    text-align: center;
+}
+
+.bgd td {
     background: #373737;
-    font-size: 1.1rem;
-    font-weight: 400;
-    height: 3.75rem;
-    padding-right: 1.75rem;
 }
 
-.movie-list__th3_2 {
-    color: #ffffff;
-    background: #4b4d4f;
-    font-size: 1.1rem;
-    font-weight: 400;
-    height: 3.75rem;
-    padding-right: 1.75rem;
-}
-
-#ticket {
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: 900;
-}
-
-.th0_1,
-.th0_2 {
+.triangle1,
+.triangle2 {
     padding: 1rem 2rem;
     position: relative;
     color: #fff;
 }
 
-th {
-    color: #ffffff;
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
-.th0_1::after,
-.th0_2::after {
+.triangle1::after,
+.triangle2::after {
     content: '';
     position: absolute;
     border: 0.5rem solid transparent;
     margin-left: 0.5rem;
 }
 
-.th0_1::after {
+.triangle1::after {
     border-bottom: 1rem solid white;
 }
 
-.th0_2::after {
+.triangle2::after {
     border-top: 1rem solid white;
     margin-top: 0.6rem;
 }
+
+.movie-list__foot {
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin: 1.5rem auto 0;
+    max-width: 41.5rem;
+    color: rgb(36, 36, 36);
+}
+
+/** Четвертая страница */
+
+.present::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 100vw solid transparent;
+    border-top: 5.55rem solid #fff;
+}
+
+.present::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 5.55rem solid #fff;
+}
+
+.present__img {
+    position: relative;
+}
+
+.priz {
+    position: absolute;
+    box-shadow: 0.5rem 0.5rem 0.5rem #000;
+    border-radius: 100%;
+    overflow: hidden;
+    left: 0;
+    top: -13rem;
+}
+
+.priz img {
+    width: 15rem;
+    height: 15rem;
+}
+
+.present__text {
+    width: 75%;
+    margin-left: auto;
+    text-align: right;
+}
+
+.present__header {
+    color: #fff;
+    margin: 0 0 2rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.text5 {
+    color: rgb(255, 255, 255);
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.present__button a {
+    display: inline-block;
+    background: #90d23d;
+    color: rgb(255, 255, 255);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.6rem;
+    font-size: 0.9rem;
+    transition: 0.2s;
+    border: 0.1rem solid #90d23d;
+    cursor: pointer;
+}
+
+/** Пятая страница */
+.cinema__header {
+    margin: 0 0 1.5rem;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.cinema__text {
+    margin: 0 0 3rem;
+    max-width: 70%;
+    color: rgb(36, 36, 36);
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.cimena__tab {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cinema__movie1 {
+    padding: 1.15rem;
+}
+
+.cinema__descr {
+    padding: 1.2rem;
+    position: absolute;
+    background-color: rgb(144, 210, 61, 0.5);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 1.2rem 1.2rem 3rem;
+    transform: translateY(100%);
+    transition: 0.2s;
+}
+
+.cinema__relative:hover .cinema__descr {
+    transform: translateY(0%);
+}
+
+.cinema__relative {
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.cinema__img {
+    display: block;
+}
+
+.resina {
+    width: 14.8rem;
+    height: 14.8rem;
+}
+
+.cinema__sep {
+    width: 4.2rem;
+    height: 0.3rem;
+    background: #fff;
+    margin: 0.5rem 0;
+}
+
+.cinema__text1 {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.cinema__text2 {
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.cinema__linis {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.2rem;
+}
+
+.cinema__linis a {
+    display: inline-block;
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    color: rgb(144, 210, 61, 0.5);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 25);
+}
+
+.cinema__linis i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+/** Шестая страница */
+
+.map__img {
+    width: 1920px;
+    height: 450px;
+    margin-bottom: -2rem;
+}
+
+.active-traffic__icons {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.active-traffic__icons svg {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.active-traffic__text {
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2rem;
+    height: -1rem;
+}
+
+/** Сетка макета */
+.container {
+    max-width: 51.5rem;
+    margin: 0 auto;
+}
+
+.home {
+    background: url(../img/top_bg.jpg) no-repeat top center / cover;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome {
+    padding: 4rem 0 1rem;
+}
+
+.movie-list {
+    padding: 4.5rem 0 2rem;
+}
+
+.present {
+    padding: 13rem 0 8rem;
+    background: url(../img/b4_bg.jpg) no-repeat center / cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.cinema {
+    padding: 6rem 0;
+
+}
+
+.active-traffic {
+    background: #90d23d;
+    padding: 2.5rem 0 0.5rem;
+}
+
 
 /** Компоненты */
 A:link {
@@ -290,4 +570,3 @@ A:link {
 }
 
 /** Медиа – правила */
-
