@@ -5,6 +5,7 @@ body {
     margin-right: auto;
     -webkit-text-size-adjust: 100%;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 html {
@@ -103,7 +104,7 @@ html {
 .home__menu {
     float: right;
     margin-right: 1rem;
-    ;
+    line-height: 1rem;
 }
 
 .home__nav li+li {
@@ -121,6 +122,7 @@ html {
 
 .home__nav a:hover {
     color: #90d23d;
+    border-bottom: 1px solid #90d23d;
 }
 
 .home__main {
@@ -174,7 +176,7 @@ html {
 
 .welcome__info {
     position: absolute;
-    top: -10rem;
+    top: -8rem;
     width: 50%;
     padding: 1.5rem;
     background: #fff;
@@ -200,42 +202,62 @@ html {
 }
 
 .welcome__text3 {
-    margin: 0 0 1rem;
     font-size: 1.75rem;
     font-weight: 900;
+    text-align: center;
+
 }
 
 .welcome__text4 {
     color: rgb(36, 36, 36);
     font-size: 0.7rem;
     font-weight: 100;
+    line-height: 1.3;
 }
 
 .welcome__plus {
-    float: left;
-    width: 33.33%;
+    display: flex;
     padding: 0 0.75rem;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 33.33%;
 }
 
 .welcome__pluses {
-    overflow: hidden;
-    margin: 0 -0.75rem;
+    display: flex;
+    margin: 0 0.75rem;
 }
 
 .welcome__img1 {
-    height: 11.5rem;
-    position: relative;
+    height: 10.55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .welcome__img1 img {
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
+    display: block;
+}
+
+.big {
+    width: 9.4rem;
+    height: 10.35rem;
+}
+
+.soung {
+    width: 9.95rem;
+    height: 10.55rem;
+}
+
+.chair {
+    width: 9.8rem;
+    height: 9.05rem;
+}
+
+.welcome__img1 img:hover {
+    transform: scale(1.07);
+    transition: 0.2s;
 }
 
 /** Третья страница */
@@ -261,7 +283,7 @@ html {
     background: #a3cc40;
     font-size: 1.5rem;
     font-weight: 900;
-    height: 3.75rem;
+    height: 3.4rem;
     padding: 1rem 2rem 0.6rem;
     text-align: left;
 }
@@ -313,6 +335,7 @@ html {
 
 .triangle1::after {
     border-bottom: 1rem solid white;
+
 }
 
 .triangle2::after {
@@ -413,33 +436,39 @@ html {
 }
 
 .cimena__tab {
-    width: 100%;
-    border-collapse: collapse;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
 }
 
 .cinema__movie1 {
+    flex: 0 0 33.33%;
     padding: 1.15rem;
 }
 
 .cinema__descr {
-    padding: 1.2rem;
     position: absolute;
-    background-color: rgb(144, 210, 61, 0.5);
     left: 0;
+    right: 0;
     top: 0;
     bottom: 0;
-    padding: 1.2rem 1.2rem 3rem;
+    background-color: rgb(144, 210, 61, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem 1.2rem 0.5rem;
+    border-radius: 15%;
+    overflow: hidden;
     transform: translateY(100%);
     transition: 0.2s;
 }
 
 .cinema__relative:hover .cinema__descr {
-    transform: translateY(0%);
+    transform: translateY(0%)
 }
 
 .cinema__relative {
-    border-radius: 1rem;
     position: relative;
+    border-radius: 1rem;
     overflow: hidden;
 }
 
@@ -450,13 +479,7 @@ html {
 .resina {
     width: 14.8rem;
     height: 14.8rem;
-}
-
-.cinema__sep {
-    width: 4.2rem;
-    height: 0.3rem;
-    background: #fff;
-    margin: 0.5rem 0;
+    border-radius: 15%;
 }
 
 .cinema__text1 {
@@ -466,51 +489,31 @@ html {
     margin-bottom: 0.5rem;
 }
 
+.cinema__sep {
+    width: 4.2rem;
+    height: 0.3rem;
+    background: #fff;
+    margin-bottom: 0.5rem;
+}
+
 .cinema__text2 {
+    flex: 1;
     color: #fff;
     font-size: 0.9rem;
     font-weight: 500;
-    margin-bottom: 0.25rem;
 }
 
-.cinema__linis {
-    position: absolute;
-    bottom: 1.2rem;
-    left: 1.2rem;
-}
-
-.cinema__linis a {
-    display: inline-block;
-    position: relative;
+.cinema__icon {
     width: 1.5rem;
     height: 1.5rem;
-    border-radius: 100%;
-    color: rgb(144, 210, 61, 0.5);
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 25);
+    margin-top: 5rem;
 }
-
-.cinema__linis i {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-
 
 /** Шестая страница */
 
-.map__img {
-    content: '';
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 1rem;
-    margin: auto;
+.map_png {
+    width: 100%;
+    height: 22.5rem;
 }
 
 .active-traffic__icons {
@@ -521,6 +524,10 @@ html {
 .active-traffic__icons svg {
     width: 2.4rem;
     height: 2.4rem;
+}
+
+.active-traffic__icons svg:hover {
+    box-shadow: 0px 0px 0px 0px #90d23d;
 }
 
 .active-traffic__text {
@@ -534,23 +541,26 @@ html {
 
 /** Сетка макета */
 .container {
-    max-width: 51.5rem;
+    max-width: 53rem;
     margin: 0 auto;
+    padding: 0 0.75rem;
 }
 
 .home {
     background: url(../img/top_bg.jpg) no-repeat top center / cover;
-    min-height: 100vh;
+    min-height: 120vh;
     position: relative;
     overflow: hidden;
 }
 
 .welcome {
     padding: 4rem 0 1rem;
+    margin-top: -1rem;
 }
 
 .movie-list {
     padding: 4.5rem 0 2rem;
+    margin-top: -5.7rem;
 }
 
 .present {
@@ -566,9 +576,8 @@ html {
 }
 
 .map {
-    position: relative;
     height: 22.5rem;
-    overflow: hidden;
+
 }
 
 .active-traffic {
