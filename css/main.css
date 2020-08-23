@@ -503,10 +503,9 @@ html {
     font-weight: 500;
 }
 
-.cinema__icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-top: 5rem;
+.cinema__icon img {
+    width: 1.65rem;
+    height: 1.65rem;
 }
 
 /** Шестая страница */
@@ -591,3 +590,39 @@ A:link {
 }
 
 /** Медиа – правила */
+
+
+
+
+/** Задание по флекс*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 40rem;
+    justify-content: center;
+    
+   
+    
+}
+.flex__element {
+    flex: 0 0 23%;
+    background: rgb(160, 31, 31);
+    padding: 2rem;
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+   .one {
+       color: #90d23d;
+       min-height: 33.33%;
+   }
+   .two {
+       color: aqua;
+       min-height: 33.33%;
+   }
+   .three {
+       color: blue;
+       min-height: 33.33%;
+       overflow: hidden;
+   }
