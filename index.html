@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Кинотеатр</title>
 </head>
 
@@ -18,15 +19,18 @@
                     <img src="img/logo.png" alt="Логотип">
                 </div>
                 <div class="home__menu">
-                    <nav class="home__nav">
-                        <ul>
-                            <li><a href="#ticket">Event Details</a></li>
-                            <li><a href="#advantages">Speakers</a></li>
-                            <li><a href="#cinema">Sponsors</a></li>
-                            <li><a href="#contact">Past Events</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
+                    <div class="home__menu_wrap">
+                        <div class="home__menu_burger"><span></span></div>
+                        <nav class="home__nav home__nav_closed">
+                            <ul>
+                                <li><a href="#ticket">Event Details</a></li>
+                                <li><a href="#advantages">Speakers</a></li>
+                                <li><a href="#cinema">Sponsors</a></li>
+                                <li><a href="#contact">Past Events</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </header>
             <div class="home__main">
@@ -93,42 +97,44 @@
         <div class="container">
             <div class="movie-list__shell">
                 <h4 class="movie-list__header" id="ticket">Выберите фильм</h4>
-                <table class="movie-list__table">
-                    <thead>
-                        <tr>
-                            <th class="movie-list triangle1"><a href="#">Time</a></th>
-                            <th class="movie-list triangle2"><a href="#">Stuff that will happen</a></th>
-                            <th>
-                                <Title>Заказать</Title>
-                            </th>
-                        </tr>
-                    </thead>
+                <div class="movie-list__wrap">
+                    <table class="movie-list__table">
+                        <thead>
+                            <tr>
+                                <th class="movie-list triangle1"><a href="#">Time</a></th>
+                                <th class="movie-list triangle2"><a href="#">Stuff that will happen</a></th>
+                                <th>
+                                    <Title>Заказать</Title>
+                                </th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
-                        <tr class="movie-list__table bgd">
-                            <td>10am - 12pm</td>
-                            <td>Introduction and presentations about Envato</td>
-                            <td><img src="img/plus.png " alt="plus" class="movie-list__table plus"></th>
-                        </tr>
+                        <tbody>
+                            <tr class="movie-list__table bgd">
+                                <td>10am - 12pm</td>
+                                <td>Introduction and presentations about Envato</td>
+                                <td><img src="img/plus.png " alt="plus" class="movie-list__table_plus"></th>
+                            </tr>
 
-                        <tr>
-                            <td>12pm - 02pm</td>
-                            <td>Sessions by honorable guests and Speakers</td>
-                            <td><img src="img/plus.png " alt="plus" class="movie-list__table plus"></td>
-                        </tr>
-                        <tr class="movie-list__table bgd">
-                            <td>02pm - 03pm</td>
-                            <td>Break and Mingle time with the authors</td>
-                            <td><img src="img/plus.png " alt="plus" class="movie-list__table plus"></td>
-                        </tr>
+                            <tr>
+                                <td>12pm - 02pm</td>
+                                <td>Sessions by honorable guests and Speakers</td>
+                                <td><img src="img/plus.png " alt="plus" class="movie-list__table_plus"></td>
+                            </tr>
+                            <tr class="movie-list__table bgd">
+                                <td>02pm - 03pm</td>
+                                <td>Break and Mingle time with the authors</td>
+                                <td><img src="img/plus.png " alt="plus" class="movie-list__table_plus"></td>
+                            </tr>
 
-                        <tr>
-                            <td>03pm - 05pm</td>
-                            <td>Portfolio Review, Rewards and Ending Presentation</td>
-                            <td><img src="img/plus.png " alt="plus" class="movie-list__table plus"></td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <tr>
+                                <td>03pm - 05pm</td>
+                                <td>Portfolio Review, Rewards and Ending Presentation</td>
+                                <td><img src="img/plus.png " alt="plus" class="movie-list__table_plus"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="movie-list__foot">
                 <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum
@@ -180,214 +186,206 @@
                 repudiandae, suscipit!</p>
 
             <div class="cimena__tab">
-                <div>
-                    <div class="cinema__movie1">
-                        <div class="cinema__relative">
-                            <div class="cinema__img">
-                                <img src="img/mov1.jpg" alt="Человек паук" class="cinema__img resina">
-                            </div>
-                            <div class="cinema__descr">
-                                <div class="cinema__text1">Человек паук</div>
-                                <div class="cinema__sep"></div>
-                                <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
-                                <div class="cinema__linis">
-                                    <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
-                                                alt="фейсбук"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
-                                                alt="твитер"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
-                                                alt="беханс"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_dribbble"></i><img src="img/dribbble .png"
-                                            alt="дрибл"></a>
-                                </div>
+                <div class="cinema__movie1">
+                    <div class="cinema__relative">
+                        <div class="cinema__img">
+                            <img src="img/mov1.jpg" alt="Человек паук" class="cinema__img_resina">
+                        </div>
+                        <div class="cinema__descr">
+                            <div class="cinema__text1">Человек паук</div>
+                            <div class="cinema__sep"></div>
+                            <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
+                            <div class="cinema__linis">
+                                <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
+                                            alt="фейсбук"></i></a>
+                                <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
+                                            alt="твитер"></i></a>
+                                <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
+                                            alt="беханс"></i></a>
+                                <a href="#"><i class="cinema__icon icon_dribbble"><img src="img/dribbble .png"
+                                            alt="дрибл"></i></a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="cinema__movie1">
-                        <div class="cinema__relative">
-                            <div class="cinema__img"><img src="img/mov2.jpg" alt="Собачья жизнь 2"
-                                    class="cinema__img resina"></div>
-                            <div class="cinema__descr">
-                                <div class="cinema__text1">Собачья жизнь 2</div>
-                                <div class="cinema__sep"></div>
-                                <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
-                                <div class="cinema__linis">
-                                    <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
-                                                alt="фейсбук"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
-                                                alt="твитер"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
-                                                alt="беханс"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_dribbble"></i><img src="img/dribbble .png"
-                                            alt="дрибл"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cinema__movie1">
-                        <div class="cinema__relative">
-                            <div class="cinema__img"><img src="img/mov3.jpg" alt="Люди в черном"
-                                    class="cinema__img resina"></div>
-                            <div class="cinema__descr">
-                                <div class="cinema__text1">Люди в черном</div>
-                                <div class="cinema__sep"></div>
-                                <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
-                                <div class="cinema__linis">
-                                    <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
-                                                alt="фейсбук"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
-                                                alt="твитер"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
-                                                alt="беханс"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_dribbble"></i><img src="img/dribbble .png"
-                                            alt="дрибл"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
-                <div>
-                    <div class="cinema__movie1">
-                        <div class="cinema__relative">
-                            <div class="cinema__img">
-                                <img src="img/mov1.jpg" alt="Человек паук" class="cinema__img resina">
-                            </div>
-                            <div class="cinema__descr">
-                                <div class="cinema__text1">Человек паук</div>
-                                <div class="cinema__sep"></div>
-                                <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
-                                <div class="cinema__linis">
-                                    <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
-                                                alt="фейсбук"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
-                                                alt="твитер"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
-                                                alt="беханс"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_dribbble"></i><img src="img/dribbble .png"
-                                            alt="дрибл"></a>
-                                </div>
+                <div class="cinema__movie1">
+                    <div class="cinema__relative">
+                        <div class="cinema__img"><img src="img/mov2.jpg" alt="Собачья жизнь 2"
+                                class="cinema__img_resina"></div>
+                        <div class="cinema__descr">
+                            <div class="cinema__text1">Собачья жизнь 2</div>
+                            <div class="cinema__sep"></div>
+                            <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
+                            <div class="cinema__linis">
+                                <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
+                                            alt="фейсбук"></i></a>
+                                <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
+                                            alt="твитер"></i></a>
+                                <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
+                                            alt="беханс"></i></a>
+                                <a href="#"><i class="cinema__icon icon_dribbble"><img src="img/dribbble .png"
+                                            alt="дрибл"></i></a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="cinema__movie1">
-                        <div class="cinema__relative">
-                            <div class="cinema__img"><img src="img/mov2.jpg" alt="Собачья жизнь 2"
-                                    class="cinema__img resina"></div>
-                            <div class="cinema__descr">
-                                <div class="cinema__text1">Собачья жизнь 2</div>
-                                <div class="cinema__sep"></div>
-                                <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
-                                <div class="cinema__linis">
-                                    <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
-                                                alt="фейсбук"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
-                                                alt="твитер"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
-                                                alt="беханс"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_dribbble"></i><img src="img/dribbble .png"
-                                            alt="дрибл"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cinema__movie1">
-                        <div class="cinema__relative">
-                            <div class="cinema__img"><img src="img/mov3.jpg" alt="Люди в черном"
-                                    class="cinema__img resina"></div>
-                            <div class="cinema__descr">
-                                <div class="cinema__text1">Люди в черном</div>
-                                <div class="cinema__sep"></div>
-                                <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
-                                <div class="cinema__linis">
-                                    <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
-                                                alt="фейсбук"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
-                                                alt="твитер"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
-                                                alt="беханс"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_dribbble"></i><img src="img/dribbble .png"
-                                            alt="дрибл"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
-                <div>
-                    <div class="cinema__movie1">
-                        <div class="cinema__relative">
-                            <div class="cinema__img">
-                                <img src="img/mov1.jpg" alt="Человек паук" class="cinema__img resina">
-                            </div>
-                            <div class="cinema__descr">
-                                <div class="cinema__text1">Человек паук</div>
-                                <div class="cinema__sep"></div>
-                                <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
-                                <div class="cinema__linis">
-                                    <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
-                                                alt="фейсбук"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
-                                                alt="твитер"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
-                                                alt="беханс"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_dribbble"></i><img src="img/dribbble .png"
-                                            alt="дрибл"></a>
-                                </div>
+                <div class="cinema__movie1">
+                    <div class="cinema__relative">
+                        <div class="cinema__img"><img src="img/mov3.jpg" alt="Люди в черном" class="cinema__img_resina">
+                        </div>
+                        <div class="cinema__descr">
+                            <div class="cinema__text1">Люди в черном</div>
+                            <div class="cinema__sep"></div>
+                            <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
+                            <div class="cinema__linis">
+                                <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
+                                            alt="фейсбук"></i></a>
+                                <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
+                                            alt="твитер"></i></a>
+                                <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
+                                            alt="беханс"></i></a>
+                                <a href="#"><i class="cinema__icon icon_dribbble"><img src="img/dribbble .png"
+                                            alt="дрибл"></i></a>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="cinema__movie1">
-                        <div class="cinema__relative">
-                            <div class="cinema__img"><img src="img/mov2.jpg" alt="Собачья жизнь 2"
-                                    class="cinema__img resina"></div>
-                            <div class="cinema__descr">
-                                <div class="cinema__text1">Собачья жизнь 2</div>
-                                <div class="cinema__sep"></div>
-                                <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
-                                <div class="cinema__linis">
-                                    <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
-                                                alt="фейсбук"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
-                                                alt="твитер"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
-                                                alt="беханс"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_dribbble"></i><img src="img/dribbble .png"
-                                            alt="дрибл"></a>
-                                </div>
+                <div class="cinema__movie1">
+                    <div class="cinema__relative">
+                        <div class="cinema__img">
+                            <img src="img/mov1.jpg" alt="Человек паук" class="cinema__img_resina">
+                        </div>
+                        <div class="cinema__descr">
+                            <div class="cinema__text1">Человек паук</div>
+                            <div class="cinema__sep"></div>
+                            <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
+                            <div class="cinema__linis">
+                                <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
+                                            alt="фейсбук"></i></a>
+                                <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
+                                            alt="твитер"></i></a>
+                                <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
+                                            alt="беханс"></i></a>
+                                <a href="#"><i class="cinema__icon icon_dribbble"><img src="img/dribbble .png"
+                                            alt="дрибл"></i></a>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="cinema__movie1">
-                        <div class="cinema__relative">
-                            <div class="cinema__img"><img src="img/mov3.jpg" alt="Люди в черном"
-                                    class="cinema__img resina"></div>
-                            <div class="cinema__descr">
-                                <div class="cinema__text1">Люди в черном</div>
-                                <div class="cinema__sep"></div>
-                                <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
-                                <div class="cinema__linis">
-                                    <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
-                                                alt="фейсбук"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
-                                                alt="твитер"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
-                                                alt="беханс"></i></a>
-                                    <a href="#"><i class="cinema__icon icon_dribbble"></i><img src="img/dribbble .png"
-                                            alt="дрибл"></a>
-                                </div>
+                <div class="cinema__movie1">
+                    <div class="cinema__relative">
+                        <div class="cinema__img"><img src="img/mov2.jpg" alt="Собачья жизнь 2"
+                                class="cinema__img_resina"></div>
+                        <div class="cinema__descr">
+                            <div class="cinema__text1">Собачья жизнь 2</div>
+                            <div class="cinema__sep"></div>
+                            <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
+                            <div class="cinema__linis">
+                                <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
+                                            alt="фейсбук"></i></a>
+                                <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
+                                            alt="твитер"></i></a>
+                                <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
+                                            alt="беханс"></i></a>
+                                <a href="#"><i class="cinema__icon icon_dribbble"><img src="img/dribbble .png"
+                                            alt="дрибл"></i></a>
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="cinema__movie1">
+                    <div class="cinema__relative">
+                        <div class="cinema__img"><img src="img/mov3.jpg" alt="Люди в черном" class="cinema__img_resina">
+                        </div>
+                        <div class="cinema__descr">
+                            <div class="cinema__text1">Люди в черном</div>
+                            <div class="cinema__sep"></div>
+                            <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
+                            <div class="cinema__linis">
+                                <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
+                                            alt="фейсбук"></i></a>
+                                <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
+                                            alt="твитер"></i></a>
+                                <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
+                                            alt="беханс"></i></a>
+                                <a href="#"><i class="cinema__icon icon_dribbble"><img src="img/dribbble .png"
+                                            alt="дрибл"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cinema__movie1">
+                    <div class="cinema__relative">
+                        <div class="cinema__img">
+                            <img src="img/mov1.jpg" alt="Человек паук" class="cinema__img_resina">
+                        </div>
+                        <div class="cinema__descr">
+                            <div class="cinema__text1">Человек паук</div>
+                            <div class="cinema__sep"></div>
+                            <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
+                            <div class="cinema__linis">
+                                <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
+                                            alt="фейсбук"></i></a>
+                                <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
+                                            alt="твитер"></i></a>
+                                <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
+                                            alt="беханс"></i></a>
+                                <a href="#"><i class="cinema__icon icon_dribbble"><img src="img/dribbble .png"
+                                            alt="дрибл"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cinema__movie1">
+                    <div class="cinema__relative">
+                        <div class="cinema__img"><img src="img/mov2.jpg" alt="Собачья жизнь 2"
+                                class="cinema__img_resina"></div>
+                        <div class="cinema__descr">
+                            <div class="cinema__text1">Собачья жизнь 2</div>
+                            <div class="cinema__sep"></div>
+                            <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
+                            <div class="cinema__linis">
+                                <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
+                                            alt="фейсбук"></i></a>
+                                <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
+                                            alt="твитер"></i></a>
+                                <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
+                                            alt="беханс"></i></a>
+                                <a href="#"><i class="cinema__icon icon_dribbble"><img src="img/dribbble .png"
+                                            alt="дрибл"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cinema__movie1">
+                    <div class="cinema__relative">
+                        <div class="cinema__img"><img src="img/mov3.jpg" alt="Люди в черном" class="cinema__img_resina">
+                        </div>
+                        <div class="cinema__descr">
+                            <div class="cinema__text1">Люди в черном</div>
+                            <div class="cinema__sep"></div>
+                            <div class="cinema__text2">More about selling in the Envato Marketplaces</div>
+                            <div class="cinema__linis">
+                                <a href="#"><i class="cinema__icon icon_facebook"><img src="img/facebook  .png"
+                                            alt="фейсбук"></i></a>
+                                <a href="#"><i class="cinema__icon icon_twiter"><img src="img/twitter.png"
+                                            alt="твитер"></i></a>
+                                <a href="#"><i class="cinema__icon icon_behance"><img src="img/behance.png"
+                                            alt="беханс"></i></a>
+                                <a href="#"><i class="cinema__icon icon_dribbble"><img src="img/dribbble .png"
+                                            alt="дрибл"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -566,48 +564,6 @@
             <p> <input type="submit" value="Заказать"></p>
         </div>
     </form>
-
-
-    <div class="flex">
-        <div class="flex__element">
-            <p class="flex__text one">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p class="flex__text two">Ullam voluptates fugiat praesentium quasi est fugit nesciunt dolorem</p>
-            <p class="flex__text three">fuga soluta a doloribus harum deserunt iusto iste autem</p>
-        </div>
-
-        <div class="flex__element"><p class="flex__text one">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p class="flex__text two">Ullam voluptates fugiat praesentium quasi est fugit nesciunt dolorem</p>
-            <p class="flex__text three">fuga soluta a doloribus harum deserunt iusto iste autem</p>
-        </div>
-        <div class="flex__element"><p class="flex__text one">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p class="flex__text two">Ullam voluptates fugiat praesentium quasi est fugit nesciunt dolorem</p>
-            <p class="flex__text three">fuga soluta a doloribus harum deserunt iusto iste autem</p>
-        </div>
-
-        <div class="flex__element"><p class="flex__text one">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p class="flex__text two">Ullam voluptates fugiat praesentium quasi est fugit nesciunt dolorem</p>
-            <p class="flex__text three">fuga soluta a doloribus harum deserunt iusto iste autem</p>
-        </div>
-
-        <div class="flex__element"><p class="flex__text one">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p class="flex__text two">Ullam voluptates fugiat praesentium quasi est fugit nesciunt dolorem</p>
-            <p class="flex__text three">fuga soluta a doloribus harum deserunt iusto iste autem</p>
-        </div>
-
-        <div class="flex__element"><p class="flex__text one">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p class="flex__text two">Ullam voluptates fugiat praesentium quasi est fugit nesciunt dolorem</p>
-            <p class="flex__text three">fuga soluta a doloribus harum deserunt iusto iste autem</p>
-        </div>
-        <div class="flex__element"><p class="flex__text one">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p class="flex__text two">Ullam voluptates fugiat praesentium quasi est fugit nesciunt dolorem</p>
-            <p class="flex__text three">fuga soluta a doloribus harum deserunt iusto iste autem</p>
-        </div>
-
-        <div class="flex__element"><p class="flex__text one">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            <p class="flex__text two">Ullam voluptates fugiat praesentium quasi est fugit nesciunt dolorem</p>
-            <p class="flex__text three">fuga soluta a doloribus harum deserunt iusto iste autem</p>
-        </div>
-    </div>
 </body>
 
 </html>

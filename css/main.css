@@ -95,20 +95,22 @@ html {
 .home__logo img {
     width: 9.4rem;
 }
-
+.home__nav {
+    text-align: right;
+}
 .home__nav li {
     display: inline-block;
-
 }
 
 .home__menu {
     float: right;
-    margin-right: 1rem;
+    margin-right: 3rem;
     line-height: 1rem;
 }
 
 .home__nav li+li {
-    margin-left: 1.5rem;
+    margin-left: 0.65rem;
+    margin-top: 0.7rem;
 }
 
 .home__nav a {
@@ -296,7 +298,7 @@ html {
     color: #ffffff;
 }
 
-.plus {
+.movie-list__table_plus {
     width: 1.65rem;
     height: 1.65rem;
 }
@@ -306,7 +308,6 @@ html {
     font-size: 1.1rem;
     font-weight: 400;
     background: #4b4d4f;
-    height: 3.17rem;
     padding: 1rem 2rem 0.6rem;
 }
 
@@ -436,14 +437,14 @@ html {
 }
 
 .cimena__tab {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 2.8rem;
+    grid-column-gap: 2.8rem;
 }
 
 .cinema__movie1 {
-    flex: 0 0 33.33%;
-    padding: 1.15rem;
+    overflow: hidden;
 }
 
 .cinema__descr {
@@ -455,8 +456,7 @@ html {
     background-color: rgb(144, 210, 61, 0.5);
     display: flex;
     flex-direction: column;
-    padding: 1.2rem 1.2rem 0.5rem;
-    border-radius: 15%;
+    padding: 1.25rem;
     overflow: hidden;
     transform: translateY(100%);
     transition: 0.2s;
@@ -470,16 +470,12 @@ html {
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
+    height: 14.8rem;
+    width: 14.8rem;
 }
 
 .cinema__img {
     display: block;
-}
-
-.resina {
-    width: 14.8rem;
-    height: 14.8rem;
-    border-radius: 15%;
 }
 
 .cinema__text1 {
@@ -487,6 +483,11 @@ html {
     font-size: 1.75rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+}
+
+.cinema__img_resina {
+    height: 14.8rem;
+    width: 14.8rem;
 }
 
 .cinema__sep {
@@ -592,37 +593,3 @@ A:link {
 /** Медиа – правила */
 
 
-
-
-/** Задание по флекс*/
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 40rem;
-    justify-content: center;
-    
-   
-    
-}
-.flex__element {
-    flex: 0 0 23%;
-    background: rgb(160, 31, 31);
-    padding: 2rem;
-    margin: .5rem;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-}
-   .one {
-       color: #90d23d;
-       min-height: 33.33%;
-   }
-   .two {
-       color: aqua;
-       min-height: 33.33%;
-   }
-   .three {
-       color: blue;
-       min-height: 33.33%;
-       overflow: hidden;
-   }
