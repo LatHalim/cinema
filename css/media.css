@@ -41,7 +41,7 @@
         overflow: hidden;
     }
     .home__nav_closed {
-        transform: translateX(-100%);
+        transform: translateY(-100%);
     }
     .home__nav li {
         display: block;
@@ -86,7 +86,7 @@
         font-size: 2rem;
     }
     .welcome__text4 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .welcome__shell {
         transform: translateX(100%);
@@ -140,6 +140,9 @@
     .text5 {
         font-size: 2rem;
         text-align: justify;
+    }
+    .cinema__movie1 {
+        padding: 0 0.5rem 0 0.5rem;
     }
     .cinema__text {
         font-size: 2rem;

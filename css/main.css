@@ -97,20 +97,21 @@ html {
 }
 .home__nav {
     text-align: right;
+    margin-left: 2rem;
 }
 .home__nav li {
     display: inline-block;
+    margin-left: 1rem;
+    
 }
 
 .home__menu {
     float: right;
-    margin-right: 3rem;
     line-height: 1rem;
 }
 
 .home__nav li+li {
-    margin-left: 0.65rem;
-    margin-top: 0.7rem;
+    margin-left: 2rem;
 }
 
 .home__nav a {
@@ -128,7 +129,8 @@ html {
 }
 
 .home__main {
-    padding: 7rem 0 5rem;
+    padding: 7rem 0 12.5rem;
+    margin-bottom: 5.5rem;
 }
 
 .home::after {
@@ -157,7 +159,9 @@ html {
     font-weight: 400;
     line-height: 1;
     border: honeydew;
-    margin-left: 0rem;
+    margin-left: 0.5rem;
+    margin-top: -0.5rem;
+
 }
 
 .text-right {
@@ -178,7 +182,7 @@ html {
 
 .welcome__info {
     position: absolute;
-    top: -8rem;
+    top: -10rem;
     width: 50%;
     padding: 1.5rem;
     background: #fff;
@@ -189,7 +193,7 @@ html {
 .welcome__header {
     font-size: 2.5rem;
     font-weight: 900;
-    margin: 0 0 6rem;
+    margin: 0.8rem 0 6rem 0.5rem;
 }
 
 .welcome__text1 {
@@ -201,6 +205,7 @@ html {
 .welcome__text2 {
     font-size: 0.7rem;
     font-weight: 100;
+    margin-bottom: 0.8rem;
 }
 
 .welcome__text3 {
@@ -215,6 +220,7 @@ html {
     font-size: 0.7rem;
     font-weight: 100;
     line-height: 1.3;
+    margin-top: 1rem;
 }
 
 .welcome__plus {
@@ -223,6 +229,7 @@ html {
     flex-direction: column;
     align-items: center;
     flex: 0 0 33.33%;
+    margin-top: 1rem;
 }
 
 .welcome__pluses {
@@ -269,7 +276,7 @@ html {
     font-size: 2.5rem;
     text-align: center;
     font-weight: 700;
-    margin: 3.5rem;
+    margin: 2.5rem 0 3.8rem;
 }
 
 .movie-list__table {
@@ -374,6 +381,7 @@ html {
 
 .present__img {
     position: relative;
+    overflow: hidden;
 }
 
 .priz {
@@ -381,13 +389,15 @@ html {
     box-shadow: 0.5rem 0.5rem 0.5rem #000;
     border-radius: 100%;
     overflow: hidden;
-    left: 0;
-    top: -13rem;
+    left: 1rem;
+    top: -9.5rem;
+    width: 16rem;
+    height: 16rem;
 }
 
 .priz img {
-    width: 15rem;
-    height: 15rem;
+    width: 16rem;
+    height: 16rem;
 }
 
 .present__text {
@@ -407,6 +417,7 @@ html {
     color: rgb(255, 255, 255);
     font-size: 0.7rem;
     font-weight: 100;
+    margin: 0 5rem 1rem;
 }
 
 .present__button a {
@@ -423,13 +434,13 @@ html {
 
 /** Пятая страница */
 .cinema__header {
-    margin: 0 0 1.5rem;
+    margin: 0 0 1.5rem 1.5rem;
     font-size: 2.5rem;
     font-weight: 900;
 }
 
 .cinema__text {
-    margin: 0 0 3rem;
+    margin: 0 0 3rem 1.5rem;
     max-width: 70%;
     color: rgb(36, 36, 36);
     font-size: 0.7rem;
@@ -549,30 +560,30 @@ cinema__icon img {
 
 .home {
     background: url(../img/top_bg.jpg) no-repeat top center / cover;
-    min-height: 120vh;
+    min-height: 100vh;
     position: relative;
     overflow: hidden;
 }
 
 .welcome {
-    padding: 4rem 0 1rem;
-    margin-top: -1rem;
+    padding: 3rem 0 1rem;
+    
 }
 
 .movie-list {
-    padding: 4.5rem 0 2rem;
-    margin-top: -5.7rem;
+    padding: 4.5rem 0 0;
+    margin-top: -3.5rem;
 }
 
 .present {
-    padding: 13rem 0 8rem;
+    padding: 6.5rem 0 8rem;
     background: url(../img/b4_bg.jpg) no-repeat center / cover;
     position: relative;
-    overflow: hidden;
+    margin-top: 7rem;
 }
 
 .cinema {
-    padding: 6rem 0;
+    padding: 4.5rem 0;
 
 }
 

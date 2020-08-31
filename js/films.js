@@ -1,8 +1,3 @@
-
-$(document).ready(function(){
-
-});
-
 const genre_1 = 'фэнтези';
 const genre_2 = 'драма';
 const genre_3 = 'комедия';
