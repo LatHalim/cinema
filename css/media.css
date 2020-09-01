@@ -119,6 +119,7 @@
     }
     .present__img {
         transform: translateX(100%);
+        overflow: hidden;
     }
     .present__text {
         width: 100%;
