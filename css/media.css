@@ -178,5 +178,19 @@
     .active-traffic__text {
         font-size: 1.5rem;
     }
+    .popup_input{
+        font-size: 2rem;
+        
+    }
+    .popup__input_wrap {
+    margin: 1rem 5rem 1rem 0;
+    }
+    .popup_input_text {
+        font-size: 1.7rem;
+    }
+    .popup-error-message {
+        font-size: 1.7rem;
+    }
+    
 }
 
