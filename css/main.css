@@ -581,7 +581,9 @@ cinema__icon img {
 }
 
 .welcome {
-    padding: 3rem 0 1rem;
+    padding: 10rem 0 1rem;
+    overflow: hidden;
+    margin-top: -7rem;
 }
 
 .movie-list {

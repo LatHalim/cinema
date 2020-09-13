@@ -1,6 +1,6 @@
 const url = 'https://kinopoiskapiunofficial.tech/api/v2.1';
 const filmsElement = document.getElementById('films');
-const tabletFilmsElement = document.getElementById('movie-list__table')[0];
+const tabletFilmsElement = document.getElementsByClassName('movie-list__table')[0];
 
 const films = [
   568413,
@@ -11,14 +11,13 @@ const films = [
   1236063
 ];
 
-
 const getFilmById = function (id) {
-  return new Promise(function(resolve, reject){
-        fetch(`${url}/films/${id}`, {
-          headers: {
-            "X-API-KEY": "380ca7cb-582d-4bd3-b879-8b59e83d9046"
-          }
-        }).then(response => response.json()).then(resolve)
+  return new Promise(function (resolve, reject) {
+    fetch(`${url}/films/${id}`, {
+      headers: {
+        "X-API-KEY": "380ca7cb-582d-4bd3-b879-8b59e83d9046"
+      }
+    }).then(response => response.json()).then(resolve)
   })
 }
 
@@ -26,12 +25,12 @@ const parseFilm = function (data) {
   data = data.data;
   let countries = '';
   let genres = '';
-  
-  data.genres.forEach(function(item){
-     genres += `${item.genre} `
+
+  data.genres.forEach(function (item) {
+    genres += `${item.genre} `
   })
-  data.countries.forEach(function(item){
-     countries += `${item.country} `
+  data.countries.forEach(function (item) {
+    countries += `${item.country} `
   })
   return {
     name: data.nameRu,
@@ -43,7 +42,15 @@ const parseFilm = function (data) {
     link: data.webUrl
   }
 }
-const generateFilmItem = function ({name, country, genre, year, description, img, link}){
+const generateFilmItem = function ({
+  name,
+  country,
+  genre,
+  year,
+  description,
+  img,
+  link
+}) {
   return ` 
         <div class="cinema__movie1">
                     <div class="cinema__relative">
@@ -69,39 +76,43 @@ const generateFilmItem = function ({name, country, genre, year, description, img
           `;
 }
 
-const generatTabletItem = function({name,genre}){
-  function getRandomNumber(min,max){
+const generatTabletItem = function ({name,genre}) {
+  function getRandomNumber(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random()*(max - min + 1)) +min;
-  }
-  let time1, time2;
-  switch (time1){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+
+  let time1, time2, time3, time4;
+  time1 = getRandomNumber(0,2);
+  time3 = getRandomNumber(0,5);
+  time4 = getRandomNumber(0,9);
+  switch (time1) {
     case 0:
     case 1:
-      time2 = getRandomNumber(0,9);
-      default:
-      time2 = getRandomNumber(0,3);
-  }
+      time2 = getRandomNumber(0, 9);
+    default:
+      time2 = getRandomNumber(0, 3);
+  };
 
-  const hours = `${time1}${time1}`;
+  const time = `${time1}${time1}:${time3}${time4}`;
   return `
-          <tr>
-              <td id="film_start_2">${hours}</td>
-              <td id="film_name_2">${name}</td>
-              <td id="film_genre_2">${genre}</td>
-              <td><img src="img/plus.png " alt="plus" class="movie-list__table_plus"></td>
-          </tr>
-        `;
+  <tr>
+      <td id="film_start_2">${time}</td>
+      <td id="film_name_2">${name}</td>
+      <td id="film_genre_2">${genre}</td>
+      <td><img src="img/plus.png " alt="plus" class="movie-list__table_plus"></td>
+  </tr>
+`;
 };
 
 let element, prepareFilm;
-films.forEach(function(item){
+films.forEach(function (item) {
   let film = getFilmById(item);
   film.then(result => {
-        prepareFilm = parseFilm(result);
-        element = generateFilmItem({...prepareFilm});
-        tabletElement = generatTabletItem({...prepareFilm});
-        filmsElement.insertAdjacentHTML('beforeEnd',element); 
+    prepareFilm = parseFilm(result);
+    element = generateFilmItem({...prepareFilm});
+    tabletElement = generatTabletItem({...prepareFilm});
+    filmsElement.insertAdjacentHTML('beforeEnd', element);
   })
 })
