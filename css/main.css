@@ -95,14 +95,16 @@ html {
 .home__logo img {
     width: 9.4rem;
 }
+
 .home__nav {
     text-align: right;
     margin-left: 2rem;
 }
+
 .home__nav li {
     display: inline-block;
     margin-left: 1rem;
-    
+
 }
 
 .home__menu {
@@ -231,14 +233,16 @@ html {
     margin-top: 1rem;
 }
 
-.welcome__plus_1{
-   margin-left: -1rem;
+.welcome__plus_1 {
+    margin-left: -1rem;
 }
+
 .welcome__plus_2 {
     margin-left: 0rem;
 }
+
 .welcome__plus_3 {
-margin-right: -1.5rem;
+    margin-right: -1.5rem;
 }
 
 .welcome__pluses {
@@ -263,10 +267,12 @@ margin-right: -1.5rem;
     height: 10.35rem;
     margin-left: -1.2rem;
 }
+
 .chair {
     margin-right: 1rem;
     margin-top: 1rem;
 }
+
 .soung {
     width: 9.95rem;
     height: 10.55rem;
@@ -309,12 +315,15 @@ margin-right: -1.5rem;
     padding: 1rem 2rem 0.6rem;
     text-align: left;
 }
+
 .movie-list__table th:nth-child(2) {
     padding: 1rem 4rem 0.6rem 1rem;
 }
+
 .movie-list__table th:nth-child(3) {
     padding: 1rem 4rem 0.6rem 1rem;
 }
+
 .movie-list__table a {
     color: #ffffff;
 }
@@ -464,7 +473,6 @@ margin-right: -1.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 2.8rem;
-    grid-column-gap: 2.8rem;
 }
 
 .cinema__movie1 {
@@ -494,11 +502,11 @@ margin-right: -1.5rem;
     position: relative;
     border-radius: 1rem;
     overflow: hidden;
-    height: 27.8rem;
-    width: 15.8rem;
+    height: 14.8rem;
+    width: 14.8rem;
 }
 
-.cinema__img img{
+.cinema__img img {
     display: block;
 }
 
@@ -625,12 +633,13 @@ A:link {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.7) ;
+    background: rgba(0, 0, 0, .7);
 }
 
 .hidden {
     display: none;
 }
+
 .close {
     color: #000;
     display: block;
@@ -640,9 +649,9 @@ A:link {
 }
 
 .order-form {
-    background: rgba(255,255,255);
+    background: rgba(255, 255, 255);
     border-radius: 14px;
-    box-shadow: 1px 0px 5px rgb(125,125,125);
+    box-shadow: 1px 0px 5px rgb(125, 125, 125);
     width: 320px;
     padding: 20px;
     margin: 150px auto;
@@ -652,24 +661,24 @@ A:link {
 .popup-error-message {
     color: #cc0033;
     font-size: .9vw;
-    line-height: 28px;   
+    line-height: 28px;
 }
 
 .popup-error-message {
     display: none;
 }
 
-.error input{
-background-color: #fce4e4;
-border: 1px solid #cc0033;
-outline: none;
+.error input {
+    background-color: #fce4e4;
+    border: 1px solid #cc0033;
+    outline: none;
 }
 
-.error .popup-error-message{
-    display: block ;
+.error .popup-error-message {
+    display: block;
 }
 
-.popup_input{
+.popup_input {
     font-size: .95rem;
     color: #6c6c6c;
     padding: 0.75rem 0.55rem;
@@ -680,12 +689,11 @@ outline: none;
 }
 
 .popup__input_wrap {
-margin: 0 3rem 1rem 0;
+    margin: 0 3rem 1rem 0;
 }
 
 .popup_input_text {
     font-size: .7rem;
 }
+
 /** Медиа – правила */
-
-
