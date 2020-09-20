@@ -561,9 +561,13 @@ cinema__icon img {
     margin-left: 0.5rem;
 }
 
-.active-traffic__icons svg:hover {
-    box-shadow: 0px 0px 0px 0px #90d23d;
+.active-traffic__icons svg {
+    filter: url(#Filter_0);  
 }
+
+.active-traffic__icons svg:hover {    
+    filter: none;
+    }
 
 .active-traffic__text {
     font-size: 0.9rem;
