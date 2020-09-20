@@ -561,11 +561,11 @@ cinema__icon img {
     margin-left: 0.5rem;
 }
 
-.active-traffic__icons svg {
+.active-traffic__icons path {
     filter: url(#Filter_0);  
 }
 
-.active-traffic__icons svg:hover {    
+.active-traffic__icons path:hover {    
     filter: none;
     }
 
