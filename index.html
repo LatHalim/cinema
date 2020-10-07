@@ -7,12 +7,14 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/loader.css">
     <link rel="stylesheet" href="js/plugins/owlcarousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="js/plugins/owlcarousel/css/owl.theme.default.min.css">
     <title>Кинотеатр</title>
 </head>
 
 <body>
+
     <div class="home">
         <div class="container">
             <header class="home__header">
@@ -100,12 +102,13 @@
                     <table id="filmsHire" class="movie-list__table">
                         <thead>
                             <tr>
-                                <th class="movie-list triangle1"><a href="#">Time</a></th>
-                                <th class="movie-list triangle2"><a href="#">Stuff that will happen</a></th>
-                                <th>Жанр</th>
                                 <th>
                                     <Title>Заказать</Title>
                                 </th>
+                                <th class="movie-list triangle1"><a href="#">Time</a></th>
+                                <th class="movie-list triangle2"><a href="#">Stuff that will happen</a></th>
+                                <th>Жанр</th>
+                                <th>Цена</th>
                             </tr>
                         </thead>
 
@@ -329,6 +332,78 @@
             </div>
         </div>
     </footer>
+
+
+
+    <div id="orderForm" class="popup hidden">
+        <form action="" class="order-form big" id="orderFormPlace">
+            <div id="closeOrderFrom" class="close"><i class="icon icon-cross" title="cross"><img
+                        src="img/close_delete_remove_cross_icon_149504.png" alt="" srcset=""></div>
+            <div class="modal__form">
+                <div>
+                    Название фильма: <span id="orderFilmName"></span>
+                </div>
+                <div>
+                    Жанр: <span id="orderFilmGanar"></span>
+                </div>
+                <div>
+                    Дата начало: <span id="orderFilmStart"></span>
+                </div>
+                <div>
+                    Зал: <span id="orderFilmRoom"></span>
+                </div>
+                <div>
+                    <label>Стоимость билета: <input type="number" id="orderFilmPrice" value=""></label>
+                </div>
+
+                <div id="buyTicketPlaceWrapper">
+                    <label>Выбранное место: <input type="text" id="buyTicketPlace" value=""></label>
+                </div>
+                <div id="buyTicketsPlaceWrapper" class="hidden">
+                    Выбранные места: <span id="buyTicketsPlace"></span>
+                </div>
+                <div>
+                    Количество выбранных: <span id="orderFilmCountTicket">0</span>
+                </div>
+                <div>
+                    Общая стоимость: <span id="orderFilmTotalPrice"></span>
+                </div>
+
+                <div class="cinema-tickets" id="cinema-tickets">
+                </div>
+                <div class="tickets-error error">
+                    <p class="popup-error-message"></p>
+                </div>
+                <div>
+                    <input type="text" placeholder="Имя*" name="name">
+                    <div class="popup-error-message"></div>
+                </div>
+
+                <div>
+                    <input type="tel" placeholder="Телефон*" name="phone">
+                    <div class="popup-error-message"></div>
+                </div>
+
+                <div class="popup__input_wrap">
+                    <button class="button1" type="submit" id="sendFormButton">
+                        Отправить
+                        <div class="overlay-loader" style="display: none;">
+                            <div class="loader">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
     <div id="popup" class="popup hidden">
         <form action="" class="order-form">
             <div id="popup-close" class="close"><i class="icon icon-cross" title="cross"><img
@@ -336,13 +411,13 @@
             <div>
                 <div>
                     <div class="popup__input_wrap">
-                        <input type="text" name="firstname" class="popup_input" id="name" placeholder="Имя*"><br>
+                        <input type="text" id="name" name="firstname" class="popup_input" placeholder="Имя*"><br>
                         <div class="popup-error-message"></div>
                     </div>
                 </div>
                 <div class="popup__input_wrap">
-                    <p><label><input type="email" name="email" placeholder="Email*" class="popup_input"
-                                id="email"></label></p>
+                    <p><label><input type="email" id="email" name="email" placeholder="Email*"
+                                class="popup_input"></label></p>
                 </div>
                 <div class="popup__input_wrap">
                     <p class="popup_input_text"><label><input type="checkbox" id="checkbox">Я согласен на обработку
@@ -355,11 +430,22 @@
         </form>
     </div>
 
+    <div id="popupSuccess" class="popup hidden">
+        <form action="" class="order-form">
+            <div id="popupSuccess-close" class="close"><i class="icon icon-cross" title="cross"><img
+                        src="img/close_delete_remove_cross_icon_149504.png" alt="" srcset=""></div>
+            <div class="modal__form">
+                <p>Поздравляем! Вы купили билет(ы) в кино!</p>
+            </div>
+        </form>
+    </div>
+
     <script src="js/jquery.js"></script>
     <script src="js/plugins/owlcarousel/js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
     <!-- <script src="js/films.js"></script> -->
-    <script src="js/ts.19.js"></script>
+    <script src="js/films2.js"></script>
+    <!-- <script src="js/ts.19.js"></script> -->
 </body>
 
 </html>

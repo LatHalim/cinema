@@ -5,6 +5,7 @@ $(document).ready(function () {
 });
 
 const closePopupButton = document.getElementById('popup-close');
+const closePopupButtonSuccess = document.getElementById('popupSuccess-close');
 const openPopupButton = document.getElementById('popup-open');
 const sendForm = document.getElementById('submit');
 const popup = document.getElementById('popup');
@@ -12,6 +13,11 @@ const popup = document.getElementById('popup');
 closePopupButton.onclick = function (event) {
   event.preventDefault();
   popup.classList.add('hidden');
+}
+
+closePopupButtonSuccess.onclick = function (event) {
+  event.preventDefault();
+  popupSuccess.classList.add('hidden');
 }
 
 openPopupButton.onclick = function (event) {
