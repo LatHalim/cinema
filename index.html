@@ -352,14 +352,15 @@
                 <div>
                     Зал: <span id="orderFilmRoom"></span>
                 </div>
-                <div>
-                    <label>Стоимость билета: <input type="number" id="orderFilmPrice" value=""></label>
+                <div class="height">
+                    <label>Стоимость билета: <input type="number" id="orderFilmPrice" value=""
+                            class="size-input"></label>
                 </div>
 
-                <div id="buyTicketPlaceWrapper">
-                    <label>Выбранное место: <input type="text" id="buyTicketPlace" value=""></label>
+                <div id="buyTicketPlaceWrapper" class="height">
+                    <label>Выбранное место: <input type="text" id="buyTicketPlace" value="" class="size-input"></label>
                 </div>
-                <div id="buyTicketsPlaceWrapper" class="hidden">
+                <div id="buyTicketsPlaceWrapper" class="hidden height">
                     Выбранные места: <span id="buyTicketsPlace"></span>
                 </div>
                 <div>
@@ -375,12 +376,12 @@
                     <p class="popup-error-message"></p>
                 </div>
                 <div>
-                    <input type="text" placeholder="Имя*" name="name">
+                    <input type="text" placeholder="Имя*" name="name" class="size-input">
                     <div class="popup-error-message"></div>
                 </div>
 
                 <div>
-                    <input type="tel" placeholder="Телефон*" name="phone">
+                    <input type="tel" placeholder="Телефон*" name="phone" class="size-input">
                     <div class="popup-error-message"></div>
                 </div>
 
@@ -435,7 +436,7 @@
             <div id="popupSuccess-close" class="close"><i class="icon icon-cross" title="cross"><img
                         src="img/close_delete_remove_cross_icon_149504.png" alt="" srcset=""></div>
             <div class="modal__form">
-                <p>Поздравляем! Вы купили билет(ы) в кино!</p>
+                <p class="popupSuccess__text">Поздравляем! Вы купили билет(ы) в кино!</p>
             </div>
         </form>
     </div>

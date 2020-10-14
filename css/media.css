@@ -1,7 +1,7 @@
 @media screen and (max-width:1200px) {
-        html {
-                font-size: 1.86vw;
-             }
+    html {
+        font-size: 1.86vw;
+    }
 }
 
 @media screen and (max-width:780px) {
@@ -10,187 +10,254 @@
         width: 25px;
         height: 22px;
     }
-    .home__menu_burger::before, 
+
+    .home__menu_burger::before,
     .home__menu_burger::after,
     .home__menu_burger span {
         content: '';
         position: absolute;
         width: 100%;
         height: 2px;
-        background:#fff;
+        background: #fff;
     }
+
     .home__menu_burger span {
-        top:50%;
+        top: 50%;
         margin-top: -1px;
     }
+
     .home__menu_burger::after {
         bottom: 0;
     }
+
     .home__nav {
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         padding: 2rem;
-        text-align:left ;
-        background: rgba(0,0,0,0.9);
+        text-align: left;
+        background: rgba(0, 0, 0, 0.9);
         z-index: 100;
-        text-align:left;
+        text-align: left;
         transform: translateX(0);
         translate: 0.2s;
         overflow: hidden;
     }
+
     .home__nav_closed {
         transform: translateY(-100%);
     }
+
     .home__nav li {
         display: block;
     }
+
     .home__logo img {
         width: 15rem;
     }
+
     .home__h1 {
         font-size: 4rem;
     }
+
     .home__h2 {
         font-size: 3rem;
         margin-top: 5rem;
     }
+
     .home__main {
         padding: 20rem 0 5rem;
     }
+
     .home {
         min-height: 100vh;
     }
+
     .welcome {
         overflow: hidden;
     }
+
     .welcome__header {
         font-size: 3.5rem;
         text-align: center;
         margin-bottom: 0;
     }
+
     .welcome__text3 {
         font-size: 2.5rem;
     }
-    
+
     .welcome__pluses {
         display: flex;
         flex-direction: column-reverse;
     }
+
     .welcome__plus {
         padding: 0 6.75rem;
         margin-top: 3rem;
     }
+
     .welcome__text2 {
         font-size: 2rem;
     }
+
     .welcome__text4 {
         font-size: 2rem;
     }
+
     .welcome__shell {
         transform: translateX(100%);
     }
+
     .movie-list__wrap {
         width: 100%;
         overflow-x: auto;
     }
+
     .movie-list__table {
         min-width: 500px;
     }
+
     .movie-list {
         margin-top: 0;
     }
+
     .movie-list__header {
         font-size: 3rem;
     }
-    .movie-list__table th  {
+
+    .movie-list__table th {
         font-size: 2rem;
     }
 
     .movie-list__table td {
         font-size: 2rem;
     }
+
     .movie-list__foot {
         font-size: 1.5rem;
     }
+
     .present__header {
         font-size: 3rem;
     }
+
     .present__img {
         transform: translateX(100%);
         overflow: hidden;
     }
+
     .present__text {
         width: 100%;
         margin-left: auto;
         text-align: center;
         padding: 1rem 4rem 1rem 3rem;
     }
+
     .present__button a {
         font-size: 1.5rem;
     }
+
     .cimena__tab {
         display: grid;
         grid-template-columns: 100%;
         justify-items: center;
     }
+
     .test-4 {
         grid-area: test-4;
     }
+
     .text5 {
         font-size: 2rem;
         text-align: justify;
     }
+
     .cinema__movie1 {
         padding: 0 0.5rem 0 0.5rem;
     }
+
     .cinema__text {
         font-size: 2rem;
         margin: 0px 1rem 3rem 8rem;
         text-align: justify;
     }
+
     .cinema__text2 {
         font-size: 1.5rem;
     }
+
     .cinema__header {
         text-align: center;
     }
+
     .cinema__relative {
-        
+
         height: 20rem;
         width: 20rem;
     }
+
     .cinema__img_resina {
         height: 20rem;
         width: 20rem;
     }
+
     .cinema__text1 {
         font-size: 2.5rem;
     }
+
     .cinema__text2 {
         font-size: 1.5rem;
     }
+
     .active-traffic__icons svg {
         width: 3rem;
         height: 3rem;
     }
+
     .active-traffic__text {
         font-size: 1.5rem;
     }
-    .popup_input{
+
+    .popup_input {
         font-size: 2rem;
-        
+
     }
+
     .popup__input_wrap {
-    margin: 1rem 5rem 1rem 0;
+        margin: 1rem 5rem 1rem 0;
     }
+
     .popup_input_text {
         font-size: 1.7rem;
     }
+
     .popup-error-message {
         font-size: 1.7rem;
     }
-    
-}
 
+    .order-form.big {
+        width: 50rem;
+        height: 70rem;
+        margin: 80px auto;
+        font-size: 2rem;
+    }
+
+    .squeare {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .height {
+        height: 4rem;
+    }
+
+    .size-input {
+        font-size: 2rem;
+    }
+
+    .popupSuccess__text {
+        font-size: 3rem;
+    }
+}
