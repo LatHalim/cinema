@@ -70,6 +70,12 @@
         padding: 20rem 0 5rem;
     }
 
+    .home__menu_city {
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
     .home {
         min-height: 100vh;
     }
@@ -260,4 +266,5 @@
     .popupSuccess__text {
         font-size: 3rem;
     }
+
 }

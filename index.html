@@ -35,6 +35,11 @@
                         </nav>
                     </div>
                 </div>
+                <div class="home__menu_city">
+                    <span>Ваш город: </span>
+                    <a class="yourCity" href="#">Москва</a>
+                </div>
+
             </header>
             <div class="home__main">
                 <h1 class="home__h1 text-center">Закажите билет в кино</h1>
@@ -441,12 +446,32 @@
         </form>
     </div>
 
-    <script src="js/jquery.js"></script>
-    <script src="js/plugins/owlcarousel/js/owl.carousel.min.js"></script>
-    <script src="js/custom.js"></script>
-    <!-- <script src="js/films.js"></script> -->
-    <script src="js/films2.js"></script>
-    <!-- <script src="js/ts.19.js"></script> -->
+    <div id="chosse_city" class="city__wrap" style="display: none;">
+        <div class="modal modal-city">
+            <div id="modal-city-close" class="close"><i class="icon icon-cross" title="cross"><img
+                        src="img/close_delete_remove_cross_icon_149504.png" alt="" srcset=""></div>
+            <div>
+                <div>
+                    <div class="popup__input_wrap">
+                        <p>Ваш город</p>
+                    </div>
+                    <div>
+                        <input type="text" name="city_choose"><br>
+                    </div>
+                </div>
+                <div id="search_result">
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/jquery.js"></script>
+        <script src="js/plugins/owlcarousel/js/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+        <!-- <script src="js/films.js"></script> -->
+        <script src="js/films2.js"></script>
+        <script src="js/ajax.js"></script>
+        <!-- <script src="js/ts.19.js"></script> -->
 </body>
 
 </html>

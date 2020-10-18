@@ -502,5 +502,11 @@ document.addEventListener('keydown', function (e) {
         orderForm.style.display = 'none';
         popupSuccess.classList.add('hidden');
         popup.classList.add('hidden');
+        chosse_city.style.display = 'none'
     }
+});
+
+const modalCityClose = document.getElementById('modal-city-close')
+modalCityClose.addEventListener('click', event => {
+    chosse_city.style.display = 'none'
 });
