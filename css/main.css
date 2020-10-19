@@ -796,8 +796,8 @@ A:link {
     background: rgba(255, 255, 255);
     border-radius: 14px;
     box-shadow: 1px 0px 5px rgb(125, 125, 125);
-    width: 20rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     padding: 1rem;
     margin: 150px auto;
     position: relative;
@@ -814,4 +814,14 @@ A:link {
 
 .modal-city-close {
     display: none;
+}
+
+.popup__input {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1.2rem;
+}
+
+.popup__wrap {
+    font-size: 1.5rem;
 }

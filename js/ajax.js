@@ -1,7 +1,8 @@
-const GEO_API = 'http://api.sypexgeo.net/',
-    CITIES_API = 'https://glavpunkt.ru/api/get_rf_cities';
+const GEO_API = 'http://api.sypexgeo.net/';
+const CITIES_API = 'https://glavpunkt.ru/api/get_rf_cities';
 
-let city, cities;
+let city;
+let cities;
 
 function getXmlReguest(url, callback) {
     let xhr = new XMLHttpRequest();
@@ -11,7 +12,7 @@ function getXmlReguest(url, callback) {
             callback.call(xhr.responseText);
         }
         if (xhr.status != 200) {
-            console.log('error')
+            console.log('error');
         }
     }
     xhr.send();
@@ -32,9 +33,9 @@ jQuery(($) => {
         let search = $(this).val(),
             result = '<ul>',
             counter = 0;
-        for (let i = 0; i < cities.lenght; i++) {
+        for (let i = 0; i < cities.length; i++) {
             if (cities[i].name.toLowerCase().indexOf(search.toLowerCase()) >= 0 && counter < 5) {
-                result += '<li> + cities[i].name + </li>';
+                result += '<li>' + cities[i].name + '</li>';
                 counter++;
             }
         }

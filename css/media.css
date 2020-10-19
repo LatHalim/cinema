@@ -267,4 +267,21 @@
         font-size: 3rem;
     }
 
+    .popup__wrap {
+        font-size: 2rem;
+    }
+
+    #search_result {
+        font-size: 2rem;
+    }
+
+    .modal-city {
+        height: 22rem;
+        width: 20rem;
+    }
+
+    .popup__input {
+        font-size: 2.2rem;
+    }
+
 }
